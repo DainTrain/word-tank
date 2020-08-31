@@ -1,0 +1,23 @@
+{
+  "name": "word-tank",
+  "version": "1.0.0",
+  "description": "A single-page application for creating Anki cards from Merriam-Webster's Dictionary entries",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DainTrain/word-tank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DainTrain/word-tank/issues"
+  },
+  "homepage": "https://github.com/DainTrain/word-tank#readme"
+}
