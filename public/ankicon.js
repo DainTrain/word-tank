@@ -6,6 +6,9 @@ function addToAnki() {
         }
     }
     let word = $("#wordInput")[0].value;
+    if ($("#pronunciationInput")[0].value != "") {
+        word += " (" + $("#pronunciationInput")[0].value + ")";
+    }
     let wordObj = {
         "action": "addNote",
         "version": 6,
