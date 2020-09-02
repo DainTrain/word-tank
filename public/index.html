@@ -8,6 +8,8 @@
   <meta name="description" content="A single-page application for creating Anki cards from Merriam-Webster's Dictionary entries">
   <meta name="author" content="https://github.com/DainTrain">
 
+  <link rel="stylesheet" href="main.css">
+
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 
   <script
@@ -17,6 +19,8 @@
 
   <script src="ankicon.js" async></script>
   <script src="merweb.js" async></script>
+
+  <script src="../private/api-keys.json"></script>
 
 </head>
 
@@ -38,6 +42,7 @@
     </tr>
   </thead>
 </table>
+<br>
 
 <button class="pure-button pure-button-primary" id="addToAnkiBtn" onclick="addToAnki()" type="button">Add to Anki</button>
 
