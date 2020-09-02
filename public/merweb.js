@@ -12,7 +12,6 @@ $.ajax({
     success: function(result) {
         let apiKeys = JSON.parse(result);
         DICT_API_TOKEN = apiKeys.dictionaryApiToken;
-        console.log('here', DICT_API_TOKEN);
     }
 })
 

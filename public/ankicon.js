@@ -11,7 +11,7 @@ function addToAnki() {
         "version": 6,
         "params" : {
             "note" : {
-                "deckName" : "testdeck",
+                "deckName" : "Vocab",
                 "modelName" : "Basic (and reversed card)",
                 "fields" : {
                     "Front": word,
