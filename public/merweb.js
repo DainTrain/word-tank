@@ -25,6 +25,7 @@ function fetchDefinition() {
             let definitionsTable = document.getElementById("definitionsTable");
             for (i = 0; i < result.length; i++) {
                 let tr = document.createElement("tr");
+                tr.setAttribute("class", "table-row");
                 let selectTd = document.createElement("td");
                 let select = document.createElement("input");
                 select.type = "checkbox";

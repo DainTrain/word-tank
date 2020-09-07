@@ -33,6 +33,7 @@ function addToAnki() {
         data: JSON.stringify(wordObj),
         success: function(response) {
             console.log(response);
+            $(".table-row").remove();
         },
         error: function(response) {
             console.log(response);
