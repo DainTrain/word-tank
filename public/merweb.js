@@ -15,6 +15,12 @@ $.ajax({
     }
 })
 
+$("#wordInput")[0].addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        $("#fetchDefinitionBtn").trigger("click");
+    }
+});
+
 function fetchDefinition() {
     $(".table-row").remove();
     let word = document.getElementById("wordInput").value;
