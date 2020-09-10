@@ -16,6 +16,7 @@ $.ajax({
 })
 
 function fetchDefinition() {
+    $(".table-row").remove();
     let word = document.getElementById("wordInput").value;
     $.ajax({
         url: dictionaryUrl + word + "?key=" + DICT_API_TOKEN,
@@ -27,6 +28,7 @@ function fetchDefinition() {
                 let tr = document.createElement("tr");
                 tr.setAttribute("class", "table-row");
                 let selectTd = document.createElement("td");
+                selectTd.setAttribute("class", "select-box");
                 let select = document.createElement("input");
                 select.type = "checkbox";
                 select.value = "off";
@@ -34,7 +36,6 @@ function fetchDefinition() {
                     this.value = "on";
                 }
                 select.setAttribute("id", "select" + i);
-                select.setAttribute("style", "text-align: center; vertical-align: middle");
                 selectTd.appendChild(select);
 
                 selectsArray[i] = select;
