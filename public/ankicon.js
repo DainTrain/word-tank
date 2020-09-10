@@ -33,7 +33,12 @@ function addToAnki() {
         data: JSON.stringify(wordObj),
         success: function(response) {
             console.log(response);
+            // clear definitions
             $(".table-row").remove();
+            // clear word input
+            $("#wordInput")[0].value = "";
+            // make word input active
+            $("#wordInput")[0].focus();
         },
         error: function(response) {
             console.log(response);
