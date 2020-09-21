@@ -6,19 +6,20 @@ let thesaurusUrl = "";
 let selectsArray = [];
 let definitionsArray = [];
 
-$.ajax({
-    url: "http://localhost:8766/apikeys",
-    method: "GET",
-    success: function(result) {
-        let apiKeys = JSON.parse(result);
-        DICT_API_TOKEN = apiKeys.dictionaryApiToken;
-    }
-})
-
-$("#wordInput")[0].addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        $("#fetchDefinitionBtn").trigger("click");
-    }
+$(document).ready(function() {
+    $.ajax({
+        url: "http://localhost:8766/apikeys",
+        method: "GET",
+        success: function(result) {
+            let apiKeys = JSON.parse(result);
+            DICT_API_TOKEN = apiKeys.dictionaryApiToken;
+        }
+    });
+    $("#wordInput")[0].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            $("#fetchDefinitionBtn").trigger("click");
+        }
+    });
 });
 
 function fetchDefinition() {
