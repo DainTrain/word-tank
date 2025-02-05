@@ -7,6 +7,7 @@
     "express": "4.21.2"
   },
   "scripts": {
+    "devStart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/DainTrain/word-tank/issues"
   },
-  "homepage": "https://github.com/DainTrain/word-tank#readme"
+  "homepage": "https://github.com/DainTrain/word-tank#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
