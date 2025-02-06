@@ -8,7 +8,7 @@ let definitionsArray = [];
 
 $(document).ready(function() {
     $.ajax({
-        url: "http://localhost:8766/apikeys",
+        url: "http://localhost:8765/apikeys",
         method: "GET",
         success: function(result) {
             let apiKeys = JSON.parse(result);

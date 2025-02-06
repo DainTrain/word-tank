@@ -28,7 +28,7 @@ function addToAnki() {
         }
     };
     $.ajax({
-        url: "http://127.0.0.1:8765",
+        url: "http://localhost:8765",
         method: "POST",
         data: JSON.stringify(wordObj),
         success: function(response) {
@@ -50,7 +50,7 @@ function getDecks() {
     let action = "deckNames";
     let version = 6;
     $.ajax({
-        url: "http://127.0.0.1:8765",
+        url: "http://localhost:8765",
         method: "POST",
         data: JSON.stringify({action, version}),
         success: function(result) {
