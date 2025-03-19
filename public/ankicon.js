@@ -30,6 +30,7 @@ function addToAnki() {
     $.ajax({
         url: "http://localhost:8765",
         method: "POST",
+        crossDomain: true,
         data: JSON.stringify(wordObj),
         success: function(response) {
             console.log(response);
