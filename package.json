@@ -4,7 +4,9 @@
   "description": "A single-page application for creating Anki cards from Merriam-Webster's Dictionary entries",
   "main": "server.js",
   "dependencies": {
-    "express": "4.21.2"
+    "express": "4.21.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "scripts": {
     "devStart": "nodemon server.js",
